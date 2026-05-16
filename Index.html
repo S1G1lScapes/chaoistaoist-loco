@@ -55,7 +55,7 @@
     // 1. Load last known ping from history on page open
     async function loadLastPing() {
       try {
-        const res = await fetch(`https://ntfy.sh/${NTFY_TOPIC}/json?poll=1&since=12h`);
+        const res = await fetch(`https://ntfy.sh/${chaoistaoist-loco}/json?poll=1&since=12h`);
         const text = await res.text();
         const lines = text.trim().split('\n').filter(Boolean);
         if (lines.length > 0) {
